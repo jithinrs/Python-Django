@@ -1,0 +1,15 @@
+How to back up database (postgres) automatically at 2am in the morning and 
+store it in a remote location like AWS s3 bucket storage
+database name test1
+database user test1
+database password test
+
+
+
+
+There is no real experience with this process. But i knew it was using a python module called boto3, which handles task related to python and amazon webservices.
+
+
+While googling I found another method to do this above mentioned task by using a django library called django-dbbackup.
+This library help to create the database backup and it can be then uploaded the s3bucket by using any scheduler library for python, similar to  django-cron. Thus the database will be automatically backed up at the specified time.
+

@@ -1,0 +1,18 @@
+ How to create a bundles of static files like css,js and images. And this static file should be minified when creating a bundle of it using webpack.
+
+
+
+
+ I am quite confused on how to answer the question 2 and 3.
+
+ One way to bundle all the static files, is by manually create a static folder in teh root folder and put the source of it in the settings.py.
+ Another method is using 'collectstatic' method. This way, django automatically collect all the static files(images, css, js) and put into a folder in the root area.
+ Either way we have to put the reference of static folder in the settings.py
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+
+
+About the second part of the question. I am not quite familiar with webpack.
